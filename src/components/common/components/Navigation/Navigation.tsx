@@ -12,7 +12,7 @@ const Navigation = (props: any) => {
     const classes = useStyles()
     const location = useLocation()
 
-    const itemWidth = 75
+    const itemWidth = 150
 
     const navBorder = useRef(null) as any
 
