@@ -5,6 +5,7 @@ import { Grid, MenuItem } from '@material-ui/core'
 import CustomSelect from '../common/components/custom-select/CustomSelect'
 
 import useStyles from './Technologies.styles'
+import HabilityMeasure from '../common/components/hability-measure/HabilityMeasure'
 
 const Technologies = (props: any) => {
     const classes = useStyles()
@@ -27,7 +28,7 @@ const Technologies = (props: any) => {
                         <Grid item md={12} className={classes.title}>
                             Tecnologías
                         </Grid>
-                        <Grid item md={12} className={classes.selector}>
+                        <Grid item md={12}>
                             <Grid container spacing={2}>
                                 <Grid item md={8} className={classes.label}>
                                     Selecciona la tecnología en la que desees ver mis habilidades
@@ -42,7 +43,14 @@ const Technologies = (props: any) => {
                             </Grid>
                         </Grid>
                         <Grid item md={12} className={classes.technologyInfoContainer}>
-                            {currentValue}
+                            <Grid container spacing={2}>
+                                <Grid item md={8} className={classes.label}>
+                                    Experiencia
+                                </Grid>
+                                <Grid item md={8} xs={12}>
+                                    <HabilityMeasure />
+                                </Grid>
+                            </Grid>
                         </Grid>
                     </Grid>
                 </Grid>

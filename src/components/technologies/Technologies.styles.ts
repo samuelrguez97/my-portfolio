@@ -7,11 +7,13 @@ const useStyles = makeStyles((theme) => ({
         boxShadow: '0px 5px 20px 0px grey',
         color: '#5656ef',
         backgroundColor: '#FFF',
-        padding: 30
+        padding: 30,
+        textAlign: 'left'
     },
     title: {
         fontSize: 34,
-        fontWeight: 600
+        fontWeight: 600,
+        textAlign: 'center'
     },
     selector: {
         textAlign: 'left'
