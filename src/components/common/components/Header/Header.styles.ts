@@ -2,22 +2,21 @@ import { makeStyles } from '@material-ui/core/styles'
 
 const useStyles = makeStyles({
     block: {
-        padding: '30px 30px',
         boxShadow: '0px 5px 20px 0px grey',
         position: 'sticky',
-        overflow: 'hidden'
+        backgroundColor: '#FFF',
+        top: 0,
+        zIndex: 1000
     },
     menu: {
-        width: 250
+        width: 250,
+        marginRight: 40
     },
     navigation: {
         width: 'auto',
         display: 'table'
     },
     pageInfo: {
-        position: 'absolute',
-        top: 0,
-        left: 0,
         height: '100%',
         boxShadow: '5px 0px 20px 0px grey',
         width: 250

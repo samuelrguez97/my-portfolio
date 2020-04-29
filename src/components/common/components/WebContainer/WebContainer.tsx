@@ -13,20 +13,22 @@ const WebContainer = (props: any) => {
     const classes = useStyles()
 
     return (
-        <Grid container justify='center' className={classes.webBlock}>
-            <Grid item md={8} sm={10} xs={11}>
-                <AnimatedSwitch
-                    atEnter={{ opacity: 0 }}
-                    atLeave={{ opacity: 0 }}
-                    atActive={{ opacity: 1 }}
-                    className={classes.switchWrapper}
-                >
-                    {
-                        routes.map(route => (
-                            <Route exact path={route.path} component={route.component} />
-                        ))
-                    }
-                </AnimatedSwitch>
+        <Grid className={classes.background}>
+            <Grid container justify='center' className={classes.webBlock}>
+                <Grid item md={8} sm={10} xs={11}>
+                    <AnimatedSwitch
+                        atEnter={{ opacity: 0 }}
+                        atLeave={{ opacity: 0 }}
+                        atActive={{ opacity: 1 }}
+                        className={classes.switchWrapper}
+                    >
+                        {
+                            routes.map(route => (
+                                <Route exact path={route.path} component={route.component} />
+                            ))
+                        }
+                    </AnimatedSwitch>
+                </Grid>
             </Grid>
         </Grid>
     )
