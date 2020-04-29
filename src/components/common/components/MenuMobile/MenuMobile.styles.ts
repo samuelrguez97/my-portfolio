@@ -16,9 +16,9 @@ const useStyles = makeStyles((theme) => ({
         '100%': { '-webkit-transform': 'translateX(-110%)' }
     },
     menuContainer: {
+        top: 0,
         position: 'absolute',
         width: '50%',
-        height: 800,
         backgroundColor: '#FFF',
         boxShadow: '0px 5px 20px 0px grey',
         transform: 'translateX(-110%)',
@@ -31,6 +31,50 @@ const useStyles = makeStyles((theme) => ({
     slideOut: {
         animation: `$slide-out 0.5s ${theme.transitions.easing.easeOut}`,
         'animation-fill-mode': 'forwards'
+    },
+    navContainer: {
+        position: 'relative',
+        width: '100%',
+        margin: '15px 0'
+    },
+    navItem: {
+        backgroundColor: '#fff',
+        transition: 'background-color 0.5s',
+        height: 60,
+        textAlign: 'left',
+        alignItems: 'center',
+        borderRadius: 5,
+        padding: '5px 0',
+        '& a': {
+            fontSize: 20,
+            textDecoration: 'none',
+            color: '#5656ef',
+            '&:visited': {
+                color: '#5656ef'
+            }
+        }
+    },
+    navItemActive: {
+        backgroundColor: '#dfdfff',
+        fontWeight: 500
+    },
+    navItemContainer: {
+        height: '100%',
+        paddingLeft: 10
+    },
+    navBorder: {
+        position: 'absolute',
+        width: 5,
+        height: 60,
+        left: 0,
+        transition: 'top 0.5s'
+    },
+    navBorderDash: {
+        width: '100%',
+        height: '100%',
+        backgroundColor: '#5656ef',
+        borderRadius: 10,
+        margin: '0 auto'
     }
 }))
 
