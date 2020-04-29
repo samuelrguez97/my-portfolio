@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles'
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
     footerBlock: {
         backgroundColor: '#fff',
         position: 'absolute',
@@ -11,9 +11,17 @@ const useStyles = makeStyles({
         width: '100%',
         height: '100%',
         color: '#5656ef',
-        padding: '35px 0',
         fontSize: 20
+    },
+    logoImg: {
+        width: 117,
+        height: 67
+    },
+    footerItem: {
+        [theme.breakpoints.down('sm')]: {
+            margin: '10px 0'
+        }
     }
-})
+}))
 
 export default useStyles

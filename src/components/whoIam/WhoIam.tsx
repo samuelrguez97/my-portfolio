@@ -5,9 +5,9 @@ import { Grid, Typography } from '@material-ui/core'
 
 import HomeImage from '../../assets/images/home_image.jpeg'
 
-import useStyles from './Home.styles'
+import useStyles from './WhoIam.styles'
 
-const Home = (props: any) => {
+const WhoIam = (props: any) => {
     const classes = useStyles()
 
     return (
@@ -24,8 +24,7 @@ const Home = (props: any) => {
                             ¿Quién soy?
                         </Grid>
                         <Grid item className={classes.text}>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ullam, alias fuga autem consequuntur aliquam ad voluptate eveniet et minima eius, tempora quod voluptas! Corrupti incidunt sit nihil porro temporibus!
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore autem at similique harum voluptate officia dolores nostrum distinctio, quasi, quam asperiores enim rem sit adipisci consectetur a libero voluptates quia.
+                            !Buenas!, si has llegado hasta aqui significa que estas buscando algo de infromación sobre mi.
                         </Grid>
                     </Grid>
                 </Grid>
@@ -34,4 +33,4 @@ const Home = (props: any) => {
     )
 }
 
-export default withRouter(Home)
+export default withRouter(WhoIam)

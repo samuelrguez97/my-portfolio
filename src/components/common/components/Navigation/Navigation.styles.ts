@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core/styles'
 
 const useStyles = makeStyles({
     navContainer: {
-        width: '100%',
+        width: 'auto',
         position: 'relative'
     },
     navItem: {

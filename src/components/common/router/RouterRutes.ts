@@ -2,22 +2,27 @@
     Rutas de la aplicación
 */
 
-import Home from '../../home/Home'
-import Faqs from '../../faqs/Faqs'
+import WhoIam from '../../whoIam/WhoIam'
 import AboutMe from '../../about-me/AboutMe'
+import Technologies from '../../technologies/Technologies'
+import Contact from '../../contact/Contact'
 
 const routes = [
     {
         path: '/',
-        component: Home
-    },
-    {
-        path: '/faqs',
-        component: Faqs
+        component: WhoIam
     },
     {
         path: '/about-me',
         component: AboutMe
+    },
+    {
+        path: '/technologies',
+        component: Technologies
+    },
+    {
+        path: '/contact',
+        component: Contact
     }
 ]
 
