@@ -4,10 +4,9 @@ import { useLocation } from 'react-router-dom'
 
 import { Link } from 'react-router-dom'
 
-import { Grid, Typography } from '@material-ui/core'
+import { Grid } from '@material-ui/core'
 
 import useStyles from './Navigation.styles'
-
 
 const Navigation = (props: any) => {
     const classes = useStyles()
@@ -15,16 +14,13 @@ const Navigation = (props: any) => {
 
     const itemWidth = 150
 
-    const navBorderUp = useRef(null) as any
-    const navBorderDown = useRef(null) as any
+    const navBorder = useRef(null) as any
 
     const [current, setCurrent] = useState(0)
-    const [currentBorderPosition, setCurrentBorderPosition] = useState(0)
 
     useEffect(() => {
-        if (navBorderUp && navBorderUp.current && navBorderDown && navBorderDown.current) {
-            navBorderUp.current.style.left = (current * itemWidth) + 'px'
-            navBorderDown.current.style.left = (current * itemWidth) + 'px'
+        if (navBorder && navBorder.current) {
+            navBorder.current.style.left = `${current * itemWidth}px`
         }
     }, [current])
 
@@ -33,6 +29,8 @@ const Navigation = (props: any) => {
             setCurrent(0)
         } else if (location.pathname === '/faqs') {
             setCurrent(1)
+        } else if (location.pathname === '/about-me') {
+            setCurrent(2)
         }
     }, [location.pathname])
 
@@ -45,15 +43,12 @@ const Navigation = (props: any) => {
                 <Link to='/faqs'>FAQS</Link>
             </Grid>
             <Grid item className={`${classes.navItem} ${current === 2 && classes.navItemActive}`}>
-                <Link to='/'>Prueba</Link>
+                <Link to='/about-me'>Sobre mi</Link>
             </Grid>
             <Grid item className={`${classes.navItem} ${current === 3 && classes.navItemActive}`}>
                 <Link to='/'>Prueba</Link>
             </Grid>
-            <div ref={navBorderUp} className={classes.navBorderUp}>
-                <div className={classes.navBorderDash} />
-            </div>
-            <div ref={navBorderDown} className={classes.navBorderDown}>
+            <div ref={navBorder} className={classes.navBorder}>
                 <div className={classes.navBorderDash} />
             </div>
         </Grid>

@@ -8,7 +8,9 @@ const useStyles = makeStyles({
     navItem: {
         width: 150,
         backgroundColor: '#fff',
-        transition: 'background-color 1s',
+        transition: 'background-color 0.5s',
+        borderRadius: 5,
+        padding: '5px 0',
         '& a': {
             fontSize: 20,
             textDecoration: 'none',
@@ -19,19 +21,12 @@ const useStyles = makeStyles({
         }
     },
     navItemActive: {
-        backgroundColor: '#dfdfff'
+        backgroundColor: '#dfdfff',
+        fontWeight: 500
     },
-    navBorderUp: {
+    navBorder: {
         position: 'absolute',
-        bottom: 35,
-        width: 150,
-        height: 5,
-        left: 0,
-        transition: 'left 0.5s'
-    },
-    navBorderDown: {
-        position: 'absolute',
-        bottom: -15,
+        bottom: 45,
         width: 150,
         height: 5,
         left: 0,
