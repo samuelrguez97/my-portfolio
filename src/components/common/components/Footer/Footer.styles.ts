@@ -6,7 +6,6 @@ const useStyles = makeStyles({
         position: 'absolute',
         bottom: 0,
         width: '100%',
-        height: 100,
         boxShadow: '0px 3px 20px 0px'
     },
     footerContainer: {

@@ -15,8 +15,6 @@ const useStyles = makeStyles({
         display: 'table'
     },
     pageInfo: {
-        color: '#fff',
-        backgroundColor: '#5656ef',
         position: 'absolute',
         top: 0,
         left: 0,
@@ -26,6 +24,10 @@ const useStyles = makeStyles({
     },
     title: {
         fontSize: 25
+    },
+    logoImg: {
+        width: 167,
+        height: '100%'
     }
 })
 

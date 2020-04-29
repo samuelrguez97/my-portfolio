@@ -19,6 +19,6 @@ const routes = [
         path: '/about-me',
         component: AboutMe
     }
-] as any
+]
 
 export default routes

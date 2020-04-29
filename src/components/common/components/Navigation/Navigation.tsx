@@ -22,7 +22,7 @@ const Navigation = (props: any) => {
         if (navBorder && navBorder.current) {
             navBorder.current.style.left = `${current * itemWidth}px`
         }
-    }, [current])
+    }, [navBorder, current])
 
     useEffect(() => {
         if (location.pathname === '/') {

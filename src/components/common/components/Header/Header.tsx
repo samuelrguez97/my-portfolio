@@ -1,10 +1,12 @@
 import * as React from 'react'
 
 import { Grid, Typography } from '@material-ui/core'
-import MenuIcon from '@material-ui/icons/Menu'
+
+import LogoImage from '../../../../assets/images/logo.jpeg'
+
+import Navigation from '../Navigation/Navigation'
 
 import useStyles from './Header.styles'
-import Navigation from '../Navigation/Navigation'
 
 const Header = (props: any) => {
     const classes = useStyles()
@@ -23,10 +25,7 @@ const Header = (props: any) => {
                     className={classes.pageInfo}
                 >
                     <Grid item>
-                        <MenuIcon fontSize='large' />
-                    </Grid>
-                    <Grid item>
-                        <Typography className={classes.title}>Mi portafolio</Typography>
+                        <img src={LogoImage} className={classes.logoImg} alt='logo-img' />
                     </Grid>
                 </Grid>
             </Grid>
