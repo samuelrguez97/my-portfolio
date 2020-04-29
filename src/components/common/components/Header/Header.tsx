@@ -6,11 +6,11 @@ import useMediaQuery from '@material-ui/core/useMediaQuery'
 
 import LogoImage from '../../../../assets/images/logo.jpeg'
 
-import Navigation from '../Navigation/Navigation'
+import Navigation from '../navigation/Navigation'
 
 import useStyles from './Header.styles'
-import NavigationMobile from '../NavigationMobile/NavigationMobile'
-import MenuMobile from '../MenuMobile/MenuMobile'
+import NavigationMobile from '../navigation-mobile/NavigationMobile'
+import MenuMobile from '../menu-mobile/MenuMobile'
 
 const Header = (props: any) => {
     const classes = useStyles()

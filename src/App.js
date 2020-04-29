@@ -4,9 +4,9 @@ import { BrowserRouter } from 'react-router-dom'
 
 import './App.css'
 
-import Header from './components/common/components/Header/Header'
-import WebContainer from './components/common/components/WebContainer/WebContainer'
-import Footer from './components/common/components/Footer/Footer'
+import Header from './components/common/components/header/Header'
+import WebContainer from './components/common/components/web-container/WebContainer'
+import Footer from './components/common/components/footer/Footer'
 
 function App() {
 

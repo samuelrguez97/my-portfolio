@@ -17,7 +17,8 @@ const useStyles = makeStyles((theme) => ({
     switchWrapper: {
         position: 'relative',
         '& > div': {
-            position: 'absolute'
+            position: 'absolute',
+            width: '100%'
         }
     }
 }))
