@@ -36,19 +36,26 @@ const Navigation = (props: any) => {
         }
     }, [location.pathname])
 
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }
+
     return (
         <Grid container justify='space-around' className={classes.navContainer}>
             <Grid item className={`${classes.navItem} ${current === 0 && classes.navItemActive}`}>
-                <Link to='/'>¿Quién soy?</Link>
+                <Link onClick={scrollToTop} to='/'>¿Quién soy?</Link>
             </Grid>
             <Grid item className={`${classes.navItem} ${current === 1 && classes.navItemActive}`}>
-                <Link to='/about-me'>Sobre mí</Link>
+                <Link onClick={scrollToTop} to='/about-me'>Sobre mí</Link>
             </Grid>
             <Grid item className={`${classes.navItem} ${current === 2 && classes.navItemActive}`}>
-                <Link to='/technologies'>Tecnologías</Link>
+                <Link onClick={scrollToTop} to='/technologies'>Tecnologías</Link>
             </Grid>
             <Grid item className={`${classes.navItem} ${current === 3 && classes.navItemActive}`}>
-                <Link to='/contact'>Contacto</Link>
+                <Link onClick={scrollToTop} to='/contact'>Contacto</Link>
             </Grid>
             <div ref={navBorder} className={classes.navBorder}>
                 <div className={classes.navBorderDash} />

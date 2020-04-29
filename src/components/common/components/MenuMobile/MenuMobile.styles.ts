@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
         '100%': { '-webkit-transform': 'translateX(-110%)' }
     },
     menuContainer: {
-        top: 0,
+        top: 71,
         position: 'absolute',
         width: '50%',
         backgroundColor: '#FFF',
