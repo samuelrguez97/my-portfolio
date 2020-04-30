@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { withRouter } from 'react-router'
 
 import { Grid, MenuItem } from '@material-ui/core'
@@ -18,7 +18,35 @@ const Technologies = (props: any) => {
         'SpringBoot'
     ]
 
-    const [currentValue, setCurrentValue] = useState()
+    const habilities = [
+        {
+            technolgy: 'Java',
+            experience: '4',
+            knowledge: '3'
+        },
+        {
+            technolgy: 'Angular',
+            experience: '3',
+            knowledge: '3'
+        },
+        {
+            technolgy: 'React',
+            experience: '4',
+            knowledge: '4'
+        },
+        {
+            technolgy: 'SQL',
+            experience: '4',
+            knowledge: '4'
+        },
+        {
+            technolgy: 'SpringBoot',
+            experience: '4',
+            knowledge: '3'
+        }
+    ] as any
+
+    const [currentValue, setCurrentValue] = useState('' as any)
 
     return (
         <Grid container justify='center'>
@@ -43,14 +71,29 @@ const Technologies = (props: any) => {
                             </Grid>
                         </Grid>
                         <Grid item md={12} className={classes.technologyInfoContainer}>
-                            <Grid container spacing={2}>
-                                <Grid item md={8} className={classes.label}>
-                                    Experiencia
-                                </Grid>
-                                <Grid item md={8} xs={12}>
-                                    <HabilityMeasure />
-                                </Grid>
-                            </Grid>
+                            {
+                                habilities.map((item, index) => (
+                                    currentValue && (item.technolgy === currentValue) &&
+                                    <Grid container spacing={4}>
+                                        <Grid item container spacing={1}>
+                                            <Grid item md={8} className={classes.label}>
+                                                Experiencia
+                                            </Grid>
+                                            <Grid item md={8} xs={12}>
+                                                <HabilityMeasure range={item.experience} />
+                                            </Grid>
+                                        </Grid>
+                                        <Grid item container spacing={1}>
+                                            <Grid item md={8} className={classes.label}>
+                                                Conocimiento
+                                            </Grid>
+                                            <Grid item md={8} xs={12}>
+                                                <HabilityMeasure range={item.knowledge} />
+                                            </Grid>
+                                        </Grid>
+                                    </Grid>
+                                ))
+                            }
                         </Grid>
                     </Grid>
                 </Grid>

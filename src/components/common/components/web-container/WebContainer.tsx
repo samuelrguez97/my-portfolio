@@ -15,7 +15,7 @@ const WebContainer = (props: any) => {
     return (
         <Grid className={classes.background}>
             <Grid container justify='center' className={classes.webBlock}>
-                <Grid item md={8} sm={10} xs={11}>
+                <Grid item lg={8} md={11} sm={11} xs={11}>
                     <AnimatedSwitch
                         atEnter={{ opacity: 0 }}
                         atLeave={{ opacity: 0 }}
