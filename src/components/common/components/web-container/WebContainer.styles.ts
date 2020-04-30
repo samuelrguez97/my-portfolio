@@ -1,24 +1,20 @@
 import { makeStyles } from '@material-ui/core/styles'
 
 const useStyles = makeStyles((theme) => ({
-    background: {
-        position: 'relative',
-        overflow: 'hidden',
-        width: '100%',
+    container: {
+        display: 'flex',
+        minHeight: '100vh',
         height: '100%',
-        backgroundColor: '#aaaaf1',
-        backgroundImage: '-webkit-linear-gradient(-60deg, #FFF 50%, #aaaaf1 50%)'
+        flexDirection: 'column'
     },
     webBlock: {
-        margin: '50px 0',
+        flex: 1,
+        marginTop: 50,
+        marginBottom: 50,
         width: '100%',
-        height: '100%'
-    },
-    switchWrapper: {
-        position: 'relative',
-        '& > div': {
-            position: 'absolute',
-            width: '100%'
+        height: '100%',
+        [theme.breakpoints.down('sm')]: {
+            marginBottom: 250,
         }
     }
 }))

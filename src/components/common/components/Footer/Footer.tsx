@@ -10,7 +10,7 @@ const Footer = (props: any) => {
 
     return (
         <Grid container justify='center' className={classes.footerBlock}>
-            <Grid item md={6}>
+            <Grid item lg={6} md={8} sm={10} xs={12}>
                 <Grid container justify='space-around' alignItems='center' className={classes.footerContainer}>
                     <Grid item md='auto' sm={12} xs={12} className={classes.footerItem}>
                         Samuel Rodríguez Aguilar 2020

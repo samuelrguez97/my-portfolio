@@ -3,7 +3,6 @@ import { makeStyles } from '@material-ui/core/styles'
 const useStyles = makeStyles((theme) => ({
     footerBlock: {
         backgroundColor: '#fff',
-        position: 'absolute',
         width: '100%',
         boxShadow: '0px 3px 20px 0px'
     },

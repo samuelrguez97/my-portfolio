@@ -13,9 +13,7 @@ function App() {
   return (
     <div className='App'>
       <BrowserRouter>
-        <Header />
         <WebContainer />
-        <Footer />
       </BrowserRouter>
     </div>
   )

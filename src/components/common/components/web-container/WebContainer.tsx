@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 
-import { withRouter, Route } from 'react-router-dom'
+import { withRouter, Route, Switch, useLocation } from 'react-router-dom'
 import { AnimatedSwitch } from 'react-router-transition'
 
 import { Grid } from '@material-ui/core'
@@ -8,29 +8,46 @@ import { Grid } from '@material-ui/core'
 import routes from '../../router/RouterRutes'
 
 import useStyles from './WebContainer.styles'
+import Header from '../header/Header'
+import Footer from '../footer/Footer'
 
 const WebContainer = (props: any) => {
     const classes = useStyles()
+    const location = useLocation()
+
+    const webAppBlock = useRef(null) as any
+    const webAppContainer = useRef(null) as any
+
+    useEffect(() => {
+        if (webAppBlock && webAppBlock.current && webAppContainer && webAppContainer.current) {
+            const currentBlock = webAppBlock.current
+            const currentContainer = webAppContainer.current
+
+            const computedBlockHeight = window.getComputedStyle(currentBlock).getPropertyValue('height')
+            const computedContainerHeight = window.getComputedStyle(currentContainer).getPropertyValue('height')
+
+            webAppBlock.current.style.height = computedContainerHeight
+
+            console.log({ computedBlockHeight, computedContainerHeight })
+        }
+    }, [location])
 
     return (
-        <Grid className={classes.background}>
-            <Grid container justify='center' className={classes.webBlock}>
-                <Grid item lg={8} md={11} sm={11} xs={11}>
-                    <AnimatedSwitch
-                        atEnter={{ opacity: 0 }}
-                        atLeave={{ opacity: 0 }}
-                        atActive={{ opacity: 1 }}
-                        className={classes.switchWrapper}
-                    >
+        <div className={classes.container}>
+            <Header />
+            <Grid container justify='center' className={classes.webBlock} ref={webAppBlock}>
+                <Grid item lg={8} md={11} sm={11} xs={11} ref={webAppContainer}>
+                    <Switch>
                         {
                             routes.map(route => (
                                 <Route exact path={route.path} component={route.component} />
                             ))
                         }
-                    </AnimatedSwitch>
+                    </Switch>
                 </Grid>
             </Grid>
-        </Grid>
+            <Footer />
+        </div>
     )
 }
 

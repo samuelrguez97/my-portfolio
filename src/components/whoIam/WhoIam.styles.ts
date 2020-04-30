@@ -1,13 +1,13 @@
 import { makeStyles } from '@material-ui/core/styles'
 
 const useStyles = makeStyles((theme) => ({
+    container: {
+        maxHeight: '100%'
+    },
     photoCard: {
         width: '100%',
         borderRadius: 10,
-        boxShadow: '0px 5px 20px 0px grey',
-        [theme.breakpoints.down('sm')]: {
-            marginBottom: 20
-        }
+        boxShadow: '0px 5px 20px 0px grey'
     },
     infoCard: {
         width: '100%',
@@ -15,7 +15,8 @@ const useStyles = makeStyles((theme) => ({
         boxShadow: '0px 5px 20px 0px grey',
         color: '#5656ef',
         backgroundColor: '#fff',
-        padding: 30
+        padding: 30,
+        marginBottom: 50
     },
     homeImg: {
         width: '100%',

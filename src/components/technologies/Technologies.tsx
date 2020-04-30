@@ -41,7 +41,7 @@ const Technologies = (props: any) => {
         },
         {
             technolgy: 'SpringBoot',
-            experience: '4',
+            experience: '3',
             knowledge: '3'
         }
     ] as any
