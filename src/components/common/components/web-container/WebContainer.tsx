@@ -20,17 +20,11 @@ const WebContainer = (props: any) => {
 
     useEffect(() => {
         if (webAppBlock && webAppBlock.current && webAppContainer && webAppContainer.current) {
-            const currentBlock = webAppBlock.current
             const currentContainer = webAppContainer.current
-
-            const computedBlockHeight = window.getComputedStyle(currentBlock).getPropertyValue('height')
             const computedContainerHeight = window.getComputedStyle(currentContainer).getPropertyValue('height')
-
             webAppBlock.current.style.height = computedContainerHeight
-
-            console.log({ computedBlockHeight, computedContainerHeight })
         }
-    }, [location])
+    }, [webAppBlock, webAppContainer, window.onresize, location])
 
     return (
         <div className={classes.container}>
