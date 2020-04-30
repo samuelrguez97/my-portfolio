@@ -11,8 +11,11 @@ const useStyles = makeStyles({
         transition: 'background-color 0.5s',
         borderRadius: 5,
         padding: '5px 0',
+        '&:hover': {
+            fontWeight: 600
+        },
         '& a': {
-            fontSize: 20,
+            fontSize: 18,
             textDecoration: 'none',
             color: '#5656ef',
             '&:visited': {
@@ -22,7 +25,7 @@ const useStyles = makeStyles({
     },
     navItemActive: {
         backgroundColor: '#dfdfff',
-        fontWeight: 500
+        fontWeight: 600
     },
     navBorder: {
         position: 'absolute',

@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
         backgroundImage: '-webkit-linear-gradient(-60deg, #FFF 50%, #aaaaf1 50%)'
     },
     webBlock: {
-        marginTop: 40,
+        margin: '50px 0',
         width: '100%',
         height: '100%'
     },

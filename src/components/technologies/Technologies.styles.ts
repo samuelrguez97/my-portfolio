@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
         textAlign: 'left'
     },
     title: {
-        fontSize: 34,
+        fontSize: 30,
         fontWeight: 600,
         textAlign: 'center'
     },
@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
         textAlign: 'left'
     },
     label: {
-        fontSize: 20
+        fontSize: 18
     },
     technologyInfoContainer: {
 

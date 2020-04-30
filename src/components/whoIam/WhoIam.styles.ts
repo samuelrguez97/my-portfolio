@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
         borderRadius: 10,
         boxShadow: '0px 5px 20px 0px grey',
         color: '#5656ef',
-        backgroundColor: '#dfdfff',
+        backgroundColor: '#fff',
         padding: 30
     },
     homeImg: {
@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
         borderRadius: 10
     },
     title: {
-        fontSize: 34,
+        fontSize: 30,
         fontWeight: 600
     },
     text: {

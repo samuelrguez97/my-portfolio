@@ -46,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
         borderRadius: 5,
         padding: '5px 0',
         '& a': {
-            fontSize: 20,
+            fontSize: 18,
             textDecoration: 'none',
             color: '#5656ef',
             '&:visited': {
@@ -56,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
     },
     navItemActive: {
         backgroundColor: '#dfdfff',
-        fontWeight: 500
+        fontWeight: 600
     },
     navItemContainer: {
         height: '100%',

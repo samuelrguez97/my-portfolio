@@ -6,7 +6,15 @@ const useStyles = makeStyles((theme) => ({
         height: 40,
         borderRadius: 6,
         boxShadow: '0px 0px 5px 0px',
-        margin: 7
+        margin: 7,
+        [theme.breakpoints.only('sm')]: {
+            width: 45,
+            height: 30,
+        },
+        [theme.breakpoints.only('xs')]: {
+            width: 25,
+            height: 20,
+        }
     }
 }))
 

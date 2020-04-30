@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     value: {
         fontSize: 18,
         color: '#5656ef',
-        fontWeight: 500
+        fontWeight: 600
     },
     valuesContainer: {
         position: 'absolute',
@@ -48,9 +48,10 @@ const useStyles = makeStyles((theme) => ({
     },
     valueItem: {
         width: '100%',
-        padding: 20,
+        padding: 18,
         cursor: 'pointer',
         '&:hover': {
+            fontWeight: 600,
             backgroundColor: '#dfdfff'
         }
     }
