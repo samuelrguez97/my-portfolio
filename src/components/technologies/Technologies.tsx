@@ -58,10 +58,10 @@ const Technologies = (props: any) => {
                         </Grid>
                         <Grid item md={12}>
                             <Grid container spacing={2}>
-                                <Grid item md={8} className={classes.label}>
+                                <Grid item md={8} xs={12} className={classes.label}>
                                     Selecciona la tecnología en la que desees ver mis habilidades
                                 </Grid>
-                                <Grid item md={8} xs={12}>
+                                <Grid item lg={5} md={8} xs={12}>
                                     <CustomSelect
                                         values={values}
                                         placeholder={'Selecciona ...'}
