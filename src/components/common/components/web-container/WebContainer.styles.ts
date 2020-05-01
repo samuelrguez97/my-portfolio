@@ -9,13 +9,14 @@ const useStyles = makeStyles((theme) => ({
     },
     webBlock: {
         flex: 1,
-        marginTop: 50,
-        marginBottom: 50,
+        margin: '50px 0',
         width: '100%',
         height: '100%',
-        [theme.breakpoints.down('sm')]: {
-            marginBottom: 250,
-        }
+    },
+    webContainer: {
+        backgroundColor: '#dfdfff',
+        padding: '40px 20px',
+        borderRadius: 10
     }
 }))
 

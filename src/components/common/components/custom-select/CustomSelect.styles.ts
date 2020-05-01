@@ -7,7 +7,6 @@ const useStyles = makeStyles((theme) => ({
         borderRadius: 6,
         width: 'auto',
         minWidth: 150,
-        maxWidth: 350,
         minHeight: 50,
         padding: '10px 20px',
         cursor: 'pointer',
@@ -51,9 +50,11 @@ const useStyles = makeStyles((theme) => ({
         padding: 18,
         cursor: 'pointer',
         '&:hover': {
-            fontWeight: 600,
             backgroundColor: '#dfdfff'
         }
+    },
+    selected: {
+        fontWeight: 600
     }
 }))
 

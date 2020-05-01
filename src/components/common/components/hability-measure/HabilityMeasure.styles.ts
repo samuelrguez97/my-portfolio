@@ -5,8 +5,8 @@ const useStyles = makeStyles((theme) => ({
         margin: '0 -7px'
     },
     habilityBox: {
-        width: 60,
-        height: 40,
+        width: 55,
+        height: 35,
         borderRadius: 6,
         boxShadow: '0px 0px 5px 0px',
         margin: 7,
@@ -16,8 +16,8 @@ const useStyles = makeStyles((theme) => ({
             height: 30,
         },
         [theme.breakpoints.only('xs')]: {
-            width: 25,
-            height: 20,
+            width: 20,
+            height: 17.5,
         }
     },
     active: {

@@ -25,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
     },
     title: {
         fontSize: 30,
+        textAlign: 'left',
         fontWeight: 600
     },
     text: {

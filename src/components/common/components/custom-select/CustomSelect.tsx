@@ -38,7 +38,7 @@ const CustomSelect = (props: any) => {
                         <Grid container>
                             {
                                 values && values.map((value, index) => (
-                                    <Grid item className={classes.valueItem} onClick={() => selectValue(index)}>
+                                    <Grid item className={`${classes.valueItem} ${value === currentValue && classes.selected}`} onClick={() => selectValue(index)}>
                                         {value}
                                     </Grid>
                                 ))

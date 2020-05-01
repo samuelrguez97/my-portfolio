@@ -72,7 +72,7 @@ const MenuMobile = (props: any) => {
                 <Grid item xs={10} className={`${classes.navItem} ${current === 0 && classes.navItemActive}`}>
                     <Grid container alignItems='center' className={classes.navItemContainer}>
                         <Grid item>
-                            <Link onClick={hideMenu} to='/'>¿Quién soy?</Link>
+                            <Link onClick={() => setTimeout(hideMenu, 375)} to='/'>¿Quién soy?</Link>
                         </Grid>
                     </Grid>
                 </Grid>
@@ -80,21 +80,21 @@ const MenuMobile = (props: any) => {
 
                     <Grid container alignItems='center' className={classes.navItemContainer}>
                         <Grid item>
-                            <Link onClick={hideMenu} to='/about-me'>Sobre mí</Link>
+                            <Link onClick={() => setTimeout(hideMenu, 375)} to='/about-me'>Sobre mí</Link>
                         </Grid>
                     </Grid>
                 </Grid>
                 <Grid item xs={10} className={`${classes.navItem} ${current === 2 && classes.navItemActive}`}>
                     <Grid container alignItems='center' className={classes.navItemContainer}>
                         <Grid item>
-                            <Link onClick={hideMenu} to='/technologies'>Tecnologías</Link>
+                            <Link onClick={() => setTimeout(hideMenu, 375)} to='/technologies'>Tecnologías</Link>
                         </Grid>
                     </Grid>
                 </Grid>
                 <Grid item xs={10} className={`${classes.navItem} ${current === 3 && classes.navItemActive}`}>
                     <Grid container alignItems='center' className={classes.navItemContainer}>
                         <Grid item>
-                            <Link onClick={hideMenu} to='/contact'>Contacto</Link>
+                            <Link onClick={() => setTimeout(hideMenu, 375)} to='/contact'>Contacto</Link>
                         </Grid>
                     </Grid>
                 </Grid>

@@ -15,22 +15,25 @@ const WebContainer = (props: any) => {
     const classes = useStyles()
     const location = useLocation()
 
+    const container = useRef(null) as any
     const webAppBlock = useRef(null) as any
     const webAppContainer = useRef(null) as any
 
     useEffect(() => {
-        if (webAppBlock && webAppBlock.current && webAppContainer && webAppContainer.current) {
+        if (container && container.current && webAppBlock && webAppBlock.current && webAppContainer && webAppContainer.current) {
             const currentContainer = webAppContainer.current
             const computedContainerHeight = window.getComputedStyle(currentContainer).getPropertyValue('height')
+
+            container.current.style.height = computedContainerHeight
             webAppBlock.current.style.height = computedContainerHeight
         }
-    }, [webAppBlock, webAppContainer, window.onresize, location])
+    }, [container, webAppBlock, webAppContainer, window.onresize, location, performance.navigation])
 
     return (
-        <div className={classes.container}>
+        <div className={classes.container} ref={container}>
             <Header />
             <Grid container justify='center' className={classes.webBlock} ref={webAppBlock}>
-                <Grid item lg={8} md={11} sm={11} xs={11} ref={webAppContainer}>
+                <Grid item lg={8} md={11} sm={11} xs={11} className={classes.webContainer} ref={webAppContainer}>
                     <Switch>
                         {
                             routes.map(route => (

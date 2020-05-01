@@ -10,7 +10,10 @@ const useStyles = makeStyles((theme) => ({
         width: '100%',
         height: '100%',
         color: '#5656ef',
-        fontSize: 20
+        fontSize: 20,
+        [theme.breakpoints.down('sm')]: {
+            fontSize: 18
+        }
     },
     logoImg: {
         width: 117,

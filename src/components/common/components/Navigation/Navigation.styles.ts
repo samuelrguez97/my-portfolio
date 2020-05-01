@@ -12,7 +12,7 @@ const useStyles = makeStyles({
         borderRadius: 5,
         padding: '5px 0',
         '&:hover': {
-            fontWeight: 600
+            backgroundColor: '#dfdfff'
         },
         '& a': {
             fontSize: 18,
@@ -24,7 +24,6 @@ const useStyles = makeStyles({
         }
     },
     navItemActive: {
-        backgroundColor: '#dfdfff',
         fontWeight: 600
     },
     navBorder: {
