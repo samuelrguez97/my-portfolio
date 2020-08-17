@@ -12,6 +12,7 @@
         "@testing-library/user-event": "^7.1.2",
         "@types/react-dom": "^16.9.6",
         "@types/react-router": "^5.1.7",
+        "husky": "^4.2.5",
         "material-ui": "^0.20.2",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
