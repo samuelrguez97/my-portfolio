@@ -34,7 +34,7 @@ const MenuMobile = (props: any) => {
         return () => {
             document.removeEventListener('mousedown', handleClickOutside);
         }
-    }, [menuRef])
+    })
 
     useEffect(() => {
         if (navBorder && navBorder.current) {

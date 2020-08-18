@@ -1,7 +1,7 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom'
 
-import { Grid, Typography } from '@material-ui/core'
+import { Grid } from '@material-ui/core'
 
 import HomeImage from '../../assets/images/home_image.jpeg'
 

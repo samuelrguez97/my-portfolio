@@ -1,6 +1,6 @@
 import React from "react";
 
-import { withRouter, Route, Switch, useLocation } from "react-router-dom";
+import { withRouter, Route, Switch } from "react-router-dom";
 
 import { Grid } from "@material-ui/core";
 
@@ -12,7 +12,6 @@ import Footer from "../footer/Footer";
 
 const WebContainer = (props: any) => {
   const classes = useStyles();
-  const location = useLocation();
 
   return (
     <div className={classes.container}>

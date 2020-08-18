@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 
 import { Grid, Typography } from '@material-ui/core'
 import { ArrowDropDown } from '@material-ui/icons'

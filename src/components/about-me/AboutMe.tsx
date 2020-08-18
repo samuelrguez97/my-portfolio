@@ -2,10 +2,10 @@ import * as React from 'react'
 
 import { Grid, Typography } from '@material-ui/core'
 
-import useStyles from './AboutMe.styles'
+// import useStyles from './AboutMe.styles'
 
 const AboutMe = (props: any) => {
-    const classes = useStyles()
+    // const classes = useStyles()
 
     return (
         <Grid container>

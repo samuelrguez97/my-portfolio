@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { withRouter } from 'react-router'
 
-import { Grid, MenuItem } from '@material-ui/core'
+import { Grid } from '@material-ui/core'
 import CustomSelect from '../common/components/custom-select/CustomSelect'
 
 import useStyles from './Technologies.styles'
