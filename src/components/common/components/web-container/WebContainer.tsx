@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { withRouter, Route, Switch } from "react-router-dom";
 
 import { Grid } from "@material-ui/core";
+import { useTheme } from "@material-ui/core/styles";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 import routes from "../../router/RouterRutes";
 
@@ -12,10 +14,25 @@ import Footer from "../footer/Footer";
 
 const WebContainer = (props: any) => {
   const classes = useStyles();
+  const theme = useTheme();
+
+  const mobile = useMediaQuery(theme.breakpoints.down("sm"));
+
+  const [scrolled, setScrolled] = useState(false);
 
   return (
     <div className={classes.container}>
-      <Header />
+      <Grid
+        className={`${classes.webHeader} ${
+          scrolled
+            ? mobile
+              ? classes.scrolledMobile
+              : classes.scrolledDesktop
+            : ""
+        }`}
+      >
+        <Header setScrolled={setScrolled} />
+      </Grid>
       <Grid container justify="center" className={classes.webBlock}>
         <Grid
           item
@@ -32,7 +49,9 @@ const WebContainer = (props: any) => {
           </Switch>
         </Grid>
       </Grid>
-      <Footer />
+      <Grid className={classes.webFooter}>
+        <Footer />
+      </Grid>
     </div>
   );
 };
