@@ -42,8 +42,8 @@ const WhoIam = (props: any) => {
           </Grid>
         </Grid>
       </Grid>
-      <Grid container item md={5} xs={11}>
-        <Grid container className={classes.photoCard}>
+      <Grid container item md={5} sm={11} xs={11}>
+        <Grid container className={classes.photoCard} spacing={2}>
           <Grid item>
             <img src={HomeImage} className={classes.homeImg} alt="home-img" />
           </Grid>

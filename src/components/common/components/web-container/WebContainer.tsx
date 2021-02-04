@@ -34,14 +34,7 @@ const WebContainer = (props: any) => {
         <Header setScrolled={setScrolled} />
       </Grid>
       <Grid container justify="center" className={classes.webBlock}>
-        <Grid
-          item
-          lg={8}
-          md={11}
-          sm={11}
-          xs={11}
-          className={classes.webContainer}
-        >
+        <Grid item lg={8} md={11} sm={11} xs={11}>
           <Switch>
             {routes.map((route) => (
               <Route exact path={route.path} component={route.component} />

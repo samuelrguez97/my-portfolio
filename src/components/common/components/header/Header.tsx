@@ -55,7 +55,7 @@ const Header = (props: any) => {
       className={`${classes.block} ${positionSticky && classes.sticky}`}
       ref={menuRef}
     >
-      <Grid xs={12} sm={12} md={12} lg={8} className={classes.root}>
+      <Grid xs={12} sm={12} md={12} lg={9} className={classes.root}>
         {firstChargeMenu && (tablet || mobile) && (
           <MenuMobile
             isOpen={showMenuMobile}

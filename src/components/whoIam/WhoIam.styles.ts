@@ -8,6 +8,7 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     borderRadius: 10,
     boxShadow: "0px 5px 20px 0px grey",
+    backgroundColor: "#fff",
   },
   infoCard: {
     width: "100%",

@@ -24,11 +24,6 @@ const useStyles = makeStyles((theme) => ({
   webFooter: {
     height: 30,
   },
-  webContainer: {
-    backgroundColor: "#dfdfff",
-    padding: "40px 20px",
-    borderRadius: 10,
-  },
 }));
 
 export default useStyles;

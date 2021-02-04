@@ -38,14 +38,9 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     margin: "15px 0",
   },
-  navItem: {
-    backgroundColor: "#fff",
-    transition: "background-color 0.5s",
-    height: 60,
-    textAlign: "left",
-    alignItems: "center",
-    borderRadius: 5,
-    padding: "5px 0",
+  navLink: {
+    width: "100%",
+    paddingLeft: 10,
     "& a": {
       fontSize: 18,
       textDecoration: "none",
@@ -54,6 +49,15 @@ const useStyles = makeStyles((theme) => ({
         color: "#5656ef",
       },
     },
+  },
+  navItem: {
+    backgroundColor: "#fff",
+    transition: "background-color 0.5s",
+    height: 60,
+    textAlign: "left",
+    alignItems: "center",
+    borderRadius: 5,
+    padding: "5px 0",
   },
   navItemActive: {
     backgroundColor: "#dfdfff",

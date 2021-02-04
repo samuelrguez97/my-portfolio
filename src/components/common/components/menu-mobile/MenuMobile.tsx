@@ -72,85 +72,86 @@ const MenuMobile = (props: any) => {
       }`}
     >
       <Grid container justify="center" className={classes.navContainer}>
-        <Grid
-          item
-          xs={10}
-          className={`${classes.navItem} ${
-            current === 0 && classes.navItemActive
-          }`}
-        >
-          <Grid
-            container
-            alignItems="center"
-            className={classes.navItemContainer}
-          >
-            <Grid item>
-              <Link onClick={() => setTimeout(hideMenu, 375)} to="/">
+        <Grid item className={classes.navLink}>
+          <Link onClick={() => setTimeout(hideMenu, 375)} to="/">
+            <Grid
+              item
+              xs={11}
+              className={`${classes.navItem} ${
+                current === 0 && classes.navItemActive
+              }`}
+            >
+              <Grid
+                container
+                alignItems="center"
+                className={classes.navItemContainer}
+              >
                 ¿Quién soy?
-              </Link>
+              </Grid>
             </Grid>
-          </Grid>
+          </Link>
         </Grid>
-        <Grid
-          item
-          xs={10}
-          className={`${classes.navItem} ${
-            current === 1 && classes.navItemActive
-          }`}
-        >
-          <Grid
-            container
-            alignItems="center"
-            className={classes.navItemContainer}
-          >
-            <Grid item>
-              <Link onClick={() => setTimeout(hideMenu, 375)} to="/about-me">
+
+        <Grid item className={classes.navLink}>
+          <Link onClick={() => setTimeout(hideMenu, 375)} to="/about-me">
+            <Grid
+              item
+              xs={11}
+              className={`${classes.navItem} ${
+                current === 1 && classes.navItemActive
+              }`}
+            >
+              <Grid
+                container
+                alignItems="center"
+                className={classes.navItemContainer}
+              >
                 Sobre mí
-              </Link>
+              </Grid>
             </Grid>
-          </Grid>
+          </Link>
         </Grid>
-        <Grid
-          item
-          xs={10}
-          className={`${classes.navItem} ${
-            current === 2 && classes.navItemActive
-          }`}
-        >
-          <Grid
-            container
-            alignItems="center"
-            className={classes.navItemContainer}
-          >
-            <Grid item>
-              <Link
-                onClick={() => setTimeout(hideMenu, 375)}
-                to="/technologies"
+
+        <Grid item className={classes.navLink}>
+          <Link onClick={() => setTimeout(hideMenu, 375)} to="/technologies">
+            <Grid
+              item
+              xs={11}
+              className={`${classes.navItem} ${
+                current === 2 && classes.navItemActive
+              }`}
+            >
+              <Grid
+                container
+                alignItems="center"
+                className={classes.navItemContainer}
               >
                 Tecnologías
-              </Link>
+              </Grid>
             </Grid>
-          </Grid>
+          </Link>
         </Grid>
-        <Grid
-          item
-          xs={10}
-          className={`${classes.navItem} ${
-            current === 3 && classes.navItemActive
-          }`}
-        >
-          <Grid
-            container
-            alignItems="center"
-            className={classes.navItemContainer}
-          >
-            <Grid item>
-              <Link onClick={() => setTimeout(hideMenu, 375)} to="/contact">
+
+        <Grid item className={classes.navLink}>
+          <Link onClick={() => setTimeout(hideMenu, 375)} to="/contact">
+            <Grid
+              item
+              xs={11}
+              className={`${classes.navItem} ${
+                current === 3 && classes.navItemActive
+              }`}
+            >
+              <Grid
+                container
+                alignItems="center"
+                className={classes.navItemContainer}
+              >
                 Contacto
-              </Link>
+              </Grid>
             </Grid>
-          </Grid>
+          </Link>
         </Grid>
+
         <div ref={navBorder} className={classes.navBorder}>
           <div className={classes.navBorderDash} />
         </div>
